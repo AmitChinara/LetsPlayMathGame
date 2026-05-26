@@ -1,0 +1,143 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#dbeafe,#fce7f3);
+    min-height:100vh;
+}
+
+.app{
+    width:95%;
+    margin:auto;
+    padding:20px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.question-box{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+
+    font-size:22px;
+    font-weight:bold;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.game-container{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+
+.slots-container,
+.options-container{
+    width:50%;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+
+    min-height:420px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.slot-row{
+    margin-bottom:18px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.drop-slot{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    min-width:180px;
+    min-height:50px;
+
+    padding:10px;
+    margin-left:10px;
+
+    border:3px dashed #94a3b8;
+    border-radius:10px;
+
+    background:#f8fafc;
+
+    transition:0.2s;
+}
+
+.drop-slot.hover{
+    background:#dbeafe;
+    border-color:#2563eb;
+}
+
+.drop-slot.correct{
+    background:#dcfce7;
+    border-color:#16a34a;
+}
+
+.option{
+    display:inline-block;
+
+    margin:10px;
+    padding:12px 18px;
+
+    background:white;
+
+    border:2px solid #cbd5e1;
+    border-radius:12px;
+
+    font-weight:bold;
+    font-size:17px;
+
+    cursor:grab;
+    user-select:none;
+
+    transition:0.2s;
+}
+
+.option:hover{
+    transform:scale(1.05);
+    background:#eff6ff;
+}
+
+.option.dragging{
+    opacity:0.5;
+}
+
+.option.used{
+    visibility:hidden;
+}
+
+.next-btn{
+    width:100%;
+
+    margin-top:20px;
+    padding:15px;
+
+    border:none;
+    border-radius:12px;
+
+    background:#22c55e;
+    color:white;
+
+    font-size:18px;
+    font-weight:bold;
+
+    opacity:0.5;
+
+    cursor:pointer;
+}
+
+.next-btn.enabled{
+    opacity:1;
+}
