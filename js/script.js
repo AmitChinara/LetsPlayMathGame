@@ -89,11 +89,16 @@ function startBossMovement() {
     clearInterval(walkInterval);
     boss.classList.add("walking");
 
-    // PERCENT-BASED PROGRESSION SPEED CURVE (SLOWED DOWN):
+    // PERCENT-BASED PROGRESSION SPEED CURVE (CUSTOM PACING):
+    // Calculate total progress ratio from 0.0 to 1.0
     const totalQuestions = gameData.length;
     const progress = currentQuestion / (totalQuestions - 1); 
 
-    const dynamicIntervalDelay = 4500 - (3000 * progress) - (2000 * progress * progress);
+    // Perfect Linear Curve:
+    // 0% progress   (progress = 0.0) -> 3500ms
+    // 50% progress  (progress = 0.5) -> 3000ms
+    // 100% progress (progress = 1.0) -> 2500ms
+    const dynamicIntervalDelay = 3500 - (1000 * progress);
 
     walkInterval = setInterval(() => {
         if (!gameActive) {
