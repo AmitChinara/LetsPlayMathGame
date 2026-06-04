@@ -1,497 +1,112 @@
 const gameData = [
 {
-    question: `
-        Each bag contains 5 apples.
-        If there are 8 bags, how many apples are there in total?
-    `,
-    
+    question: `Each box contains 6 donuts.<br>If there are 7 boxes, how many donuts are there in total?`,
     slots: [
-
-        {
-            label: "No. of Bags =",
-            answer: "8"
-        },
-
-        {
-            label: "Apples per bag =",
-            answer: "5"
-        },
-
-        {
-            label: "Total apples =",
-            answer: "x"
-        },
-
-        {
-            label: "Equation =",
-            answer: "8 × 5 = x"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "40"
-        }
-
+        { label: "No. of Boxes =", answer: "7" },
+        { label: "Donuts per box =", answer: "6" },
+        { label: "Total donuts =", answer: "x" },
+        { label: "Equation =", answer: "7 × 6 = x" },
+        { label: "Solution x =", answer: "42" }
     ],
-
-    options: [
-        "8",
-        "5",
-        "x",
-        "8 × 5 = x",
-        "40",
-
-        "35",
-        "8 × 4 = x",
-        "5 × 5 = x",
-        "45"
-    ]
+    options: ["7", "6", "x", "7 × 6 = x", "42", "36", "7 × 5 = x", "6 × 6 = x", "48"]
 },
-
 {
-    question: `
-        Each chair has 4 legs.
-        There are 28 legs in total.
-        How many chairs are there?
-    `,
-
+    question: `Each team has 5 players.<br>There are 35 players in total.<br>How many teams are there?`,
     slots: [
-
-        {
-            label: "No. of Chairs =",
-            answer: "x"
-        },
-
-        {
-            label: "Legs per chair =",
-            answer: "4"
-        },
-
-        {
-            label: "Total legs =",
-            answer: "28"
-        },
-
-        {
-            label: "Equation =",
-            answer: "x × 4 = 28"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "7"
-        }
-
+        { label: "No. of Teams =", answer: "x" },
+        { label: "Players per team =", answer: "5" },
+        { label: "Total players =", answer: "35" },
+        { label: "Equation =", answer: "x × 5 = 35" },
+        { label: "Solution x =", answer: "7" }
     ],
-
-    options: [
-        "x",
-        "4",
-        "28",
-        "x × 4 = 28",
-        "7",
-
-        "6",
-        "x × 7 = 28",
-        "4 × 4 = x",
-        "32"
-    ]
+    options: ["x", "5", "35", "x × 5 = 35", "7", "6", "x × 6 = 35", "5 × 5 = x", "40"]
 },
-
 {
-    question: `
-        Each box contains 9 pencils.
-        If there are 4 boxes, how many pencils are there in total?
-    `,
-
+    question: `Each pack has 8 batteries.<br>If you buy 3 packs, how many batteries do you have in total?`,
     slots: [
-
-        {
-            label: "No. of Boxes =",
-            answer: "4"
-        },
-
-        {
-            label: "Pencils per box =",
-            answer: "9"
-        },
-
-        {
-            label: "Total pencils =",
-            answer: "x"
-        },
-
-        {
-            label: "Equation =",
-            answer: "4 × 9 = x"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "36"
-        }
-
+        { label: "No. of Packs =", answer: "3" },
+        { label: "Batteries per pack =", answer: "8" },
+        { label: "Total batteries =", answer: "x" },
+        { label: "Equation =", answer: "3 × 8 = x" },
+        { label: "Solution x =", answer: "24" }
     ],
-
-    options: [
-        "4",
-        "9",
-        "x",
-        "4 × 9 = x",
-        "36",
-
-        "32",
-        "4 × 8 = x",
-        "9 × 9 = x",
-        "40"
-    ]
+    options: ["3", "8", "x", "3 × 8 = x", "24", "20", "3 × 7 = x", "8 × 8 = x", "28"]
 },
-
 {
-    question: `
-        Each week has 7 days.
-        There are 49 days in total.
-        How many weeks are there?
-    `,
-
+    question: `Each row in a theater has 10 seats.<br>There are 90 seats in total.<br>How many rows are there?`,
     slots: [
-
-        {
-            label: "No. of Weeks =",
-            answer: "x"
-        },
-
-        {
-            label: "Days per week =",
-            answer: "7"
-        },
-
-        {
-            label: "Total days =",
-            answer: "49"
-        },
-
-        {
-            label: "Equation =",
-            answer: "x × 7 = 49"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "7"
-        }
-
+        { label: "No. of Rows =", answer: "x" },
+        { label: "Seats per row =", answer: "10" },
+        { label: "Total seats =", answer: "90" },
+        { label: "Equation =", answer: "x × 10 = 90" },
+        { label: "Solution x =", answer: "9" }
     ],
-
-    options: [
-        "x",
-        "7",
-        "49",
-        "x × 7 = 49",
-        "7",
-
-        "8",
-        "x × 6 = 49",
-        "49 × 7 = x",
-        "42"
-    ]
+    options: ["x", "10", "90", "x × 10 = 90", "9", "8", "x × 8 = 90", "10 × 10 = x", "80"]
 },
-
 {
-    question: `
-        Each spider has 8 legs.
-        If there are 6 spiders, how many legs are there in total?
-    `,
-
+    question: `Each notebook costs 4 dollars.<br>If you buy 9 notebooks, what is the total cost?`,
     slots: [
-
-        {
-            label: "No. of Spiders =",
-            answer: "6"
-        },
-
-        {
-            label: "Legs per spider =",
-            answer: "8"
-        },
-
-        {
-            label: "Total legs =",
-            answer: "x"
-        },
-
-        {
-            label: "Equation =",
-            answer: "6 × 8 = x"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "48"
-        }
-
+        { label: "No. of Notebooks =", answer: "9" },
+        { label: "Cost per notebook =", answer: "4" },
+        { label: "Total cost =", answer: "x" },
+        { label: "Equation =", answer: "9 × 4 = x" },
+        { label: "Solution x =", answer: "36" }
     ],
-
-    options: [
-        "6",
-        "8",
-        "x",
-        "6 × 8 = x",
-        "48",
-
-        "40",
-        "6 × 7 = x",
-        "8 × 8 = x",
-        "54"
-    ]
+    options: ["9", "4", "x", "9 × 4 = x", "36", "32", "9 × 5 = x", "4 × 4 = x", "40"]
 },
-
 {
-    question: `
-        Each bicycle has 2 wheels.
-        There are 20 wheels in total.
-        How many bicycles are there?
-    `,
-
+    question: `Each car can carry 4 people.<br>There are 24 people in total.<br>How many cars are needed?`,
     slots: [
-
-        {
-            label: "No. of Bicycles =",
-            answer: "x"
-        },
-
-        {
-            label: "Wheels per bicycle =",
-            answer: "2"
-        },
-
-        {
-            label: "Total wheels =",
-            answer: "20"
-        },
-
-        {
-            label: "Equation =",
-            answer: "x × 2 = 20"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "10"
-        }
-
+        { label: "No. of Cars =", answer: "x" },
+        { label: "People per car =", answer: "4" },
+        { label: "Total people =", answer: "24" },
+        { label: "Equation =", answer: "x × 4 = 24" },
+        { label: "Solution x =", answer: "6" }
     ],
-
-    options: [
-        "x",
-        "2",
-        "20",
-        "x × 2 = 20",
-        "10",
-
-        "8",
-        "x × 10 = 20",
-        "2 × 2 = x",
-        "18"
-    ]
+    options: ["x", "4", "24", "x × 4 = 24", "6", "7", "x × 5 = 24", "4 × 4 = x", "20"]
 },
-
 {
-    question: `
-        Each shelf holds 7 books.
-        If there are 5 shelves, how many books are there in total?
-    `,
-
+    question: `Each nest holds 6 eggs.<br>If there are 5 nests, how many eggs are there in total?`,
     slots: [
-
-        {
-            label: "No. of Shelves =",
-            answer: "5"
-        },
-
-        {
-            label: "Books per shelf =",
-            answer: "7"
-        },
-
-        {
-            label: "Total books =",
-            answer: "x"
-        },
-
-        {
-            label: "Equation =",
-            answer: "5 × 7 = x"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "35"
-        }
-
+        { label: "No. of Nests =", answer: "5" },
+        { label: "Eggs per nest =", answer: "6" },
+        { label: "Total eggs =", answer: "x" },
+        { label: "Equation =", answer: "5 × 6 = x" },
+        { label: "Solution x =", answer: "30" }
     ],
-
-    options: [
-        "5",
-        "7",
-        "x",
-        "5 × 7 = x",
-        "35",
-
-        "30",
-        "5 × 6 = x",
-        "7 × 7 = x",
-        "40"
-    ]
+    options: ["5", "6", "x", "5 × 6 = x", "30", "24", "5 × 5 = x", "6 × 6 = x", "36"]
 },
-
 {
-    question: `
-        Each packet contains 3 cookies.
-        There are 24 cookies in total.
-        How many packets are there?
-    `,
-
+    question: `Each room requires 3 windows.<br>A builder has 27 windows in total.<br>How many rooms can they build?`,
     slots: [
-
-        {
-            label: "No. of Packets =",
-            answer: "x"
-        },
-
-        {
-            label: "Cookies per packet =",
-            answer: "3"
-        },
-
-        {
-            label: "Total cookies =",
-            answer: "24"
-        },
-
-        {
-            label: "Equation =",
-            answer: "x × 3 = 24"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "8"
-        }
-
+        { label: "No. of Rooms =", answer: "x" },
+        { label: "Windows per room =", answer: "3" },
+        { label: "Total windows =", answer: "27" },
+        { label: "Equation =", answer: "x × 3 = 27" },
+        { label: "Solution x =", answer: "9" }
     ],
-
-    options: [
-        "x",
-        "3",
-        "24",
-        "x × 3 = 24",
-        "8",
-
-        "7",
-        "x × 8 = 24",
-        "3 × 3 = x",
-        "27"
-    ]
+    options: ["x", "3", "27", "x × 3 = 27", "9", "8", "x × 4 = 27", "3 × 3 = x", "30"]
 },
-
 {
-    question: `
-        Each toy costs 6 dollars.
-        If 9 toys are bought, what is the total cost?
-    `,
-
+    question: `Each crate holds 8 watermelons.<br>If there are 7 crates, how many watermelons are there in total?`,
     slots: [
-
-        {
-            label: "No. of Toys =",
-            answer: "9"
-        },
-
-        {
-            label: "Cost per toy =",
-            answer: "6"
-        },
-
-        {
-            label: "Total cost =",
-            answer: "x"
-        },
-
-        {
-            label: "Equation =",
-            answer: "9 × 6 = x"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "54"
-        }
-
+        { label: "No. of Crates =", answer: "7" },
+        { label: "Watermelons per crate =", answer: "8" },
+        { label: "Total watermelons =", answer: "x" },
+        { label: "Equation =", answer: "7 × 8 = x" },
+        { label: "Solution x =", answer: "56" }
     ],
-
-    options: [
-        "9",
-        "6",
-        "x",
-        "9 × 6 = x",
-        "54",
-
-        "48",
-        "9 × 5 = x",
-        "6 × 6 = x",
-        "60"
-    ]
+    options: ["7", "8", "x", "7 × 8 = x", "56", "48", "7 × 7 = x", "8 × 8 = x", "64"]
 },
-
 {
-    question: `
-        Each bus can carry 10 students.
-        There are 50 students in total.
-        How many buses are needed?
-    `,
-
+    question: `Each classroom has 8 tables.<br>There are 72 tables in total across the school.<br>How many classrooms are there?`,
     slots: [
-
-        {
-            label: "No. of Buses =",
-            answer: "x"
-        },
-
-        {
-            label: "Students per bus =",
-            answer: "10"
-        },
-
-        {
-            label: "Total students =",
-            answer: "50"
-        },
-
-        {
-            label: "Equation =",
-            answer: "x × 10 = 50"
-        },
-
-        {
-            label: "Solution x =",
-            answer: "5"
-        }
-
+        { label: "No. of Classrooms =", answer: "x" },
+        { label: "Tables per classroom =", answer: "8" },
+        { label: "Total tables =", answer: "72" },
+        { label: "Equation =", answer: "x × 8 = 72" },
+        { label: "Solution x =", answer: "9" }
     ],
-
-    options: [
-        "x",
-        "10",
-        "50",
-        "x × 10 = 50",
-        "5",
-
-        "6",
-        "x × 5 = 50",
-        "10 × 10 = x",
-        "40"
-    ]
+    options: ["x", "8", "72", "x × 8 = 72", "9", "8", "x × 7 = 72", "8 × 8 = x", "80"]
 }
-
 ];
