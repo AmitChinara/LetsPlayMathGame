@@ -93,7 +93,7 @@ function startBossMovement() {
     const totalQuestions = gameData.length;
     const progress = currentQuestion / (totalQuestions - 1); 
 
-    const dynamicIntervalDelay = 3500 - (2000 * progress) - (1000 * progress * progress);
+    const dynamicIntervalDelay = 4500 - (3000 * progress) - (2000 * progress * progress);
 
     walkInterval = setInterval(() => {
         if (!gameActive) {
