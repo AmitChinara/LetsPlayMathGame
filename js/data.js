@@ -1,167 +1,223 @@
 const gameData = [
 {
-    question: `Each toy airplane requires 3 batteries.<br>If a kid builds 6 airplanes, how many batteries are needed in total?`,
+    question: `Each bicycle requires 2 wheels.<br>If a factory builds 12 bicycles, how many wheels are needed in total?`,
     slots: [
-        { label: "No. of Airplanes =", answer: "6" },
-        { label: "Batteries per plane =", answer: "3" },
-        { label: "Total batteries =", answer: "x" },
-        { label: "Equation =", answer: "6 × 3 = x" },
-        { label: "Solution x =", answer: "18" }
+        { label: "No. of Bicycles =", answer: "12" },
+        { label: "Wheels per bicycle =", answer: "2" },
+        { label: "Total wheels =", answer: "x" },
+        { label: "Equation =", answer: "12 × 2 = x" },
+        { label: "Solution x =", answer: "24" }
     ],
-    options: ["6", "3", "x", "6 × 3 = x", "18", "15", "6 × 4 = x", "3 × 3 = x", "24"]
+    options: ["12", "2", "x", "12 × 2 = x", "24", "22", "12 × 3 = x", "2 × 2 = x", "36"]
 },
 {
-    question: `Each fish tank can hold 8 goldfishes.<br>An aquarium has 48 goldfishes in total.<br>How many fish tanks are used?`,
+    question: `Each basket holds 5 oranges.<br>There are 40 oranges in total.<br>How many baskets are needed?`,
     slots: [
-        { label: "No. of Tanks =", answer: "x" },
-        { label: "Fish per tank =", answer: "8" },
-        { label: "Total goldfish =", answer: "48" },
-        { label: "Equation =", answer: "x × 8 = 48" },
-        { label: "Solution x =", answer: "6" }
-    ],
-    options: ["x", "8", "48", "x × 8 = 48", "6", "7", "x × 6 = 48", "8 × 8 = x", "40"]
-},
-{
-    question: `Each magic potion requires 5 stardust crystals.<br>If a wizard brews 7 potions, how many crystals does he use in total?`,
-    slots: [
-        { label: "No. of Potions =", answer: "7" },
-        { label: "Crystals per potion =", answer: "5" },
-        { label: "Total crystals =", answer: "x" },
-        { label: "Equation =", answer: "7 × 5 = x" },
-        { label: "Solution x =", answer: "35" }
-    ],
-    options: ["7", "5", "x", "7 × 5 = x", "35", "30", "7 × 4 = x", "5 × 5 = x", "42"]
-},
-{
-    question: `Each pack contains 10 juice boxes.<br>A birthday party has 70 juice boxes in total.<br>How many packs were bought?`,
-    slots: [
-        { label: "No. of Packs =", answer: "x" },
-        { label: "Juice per pack =", answer: "10" },
-        { label: "Total juice boxes =", answer: "70" },
-        { label: "Equation =", answer: "x × 10 = 70" },
-        { label: "Solution x =", answer: "7" }
-    ],
-    options: ["x", "10", "70", "x × 10 = 70", "7", "8", "x × 6 = 70", "10 × 10 = x", "60"]
-},
-{
-    question: `Each box of pizza has 8 slices.<br>If a party orders 9 boxes of pizza, how many slices are there in total?`,
-    slots: [
-        { label: "No. of Boxes =", answer: "9" },
-        { label: "Slices per box =", answer: "8" },
-        { label: "Total slices =", answer: "x" },
-        { label: "Equation =", answer: "9 × 8 = x" },
-        { label: "Solution x =", answer: "72" }
-    ],
-    options: ["9", "8", "x", "9 × 8 = x", "72", "64", "9 × 7 = x", "8 × 8 = x", "80"]
-},
-{
-    question: `Each ice cream cone costs 4 dollars.<br>A group of friends spent 28 dollars in total.<br>How many ice cream cones did they buy?`,
-    slots: [
-        { label: "No. of Cones =", answer: "x" },
-        { label: "Cost per cone =", answer: "4" },
-        { label: "Total cost =", answer: "28" },
-        { label: "Equation =", answer: "x × 4 = 28" },
-        { label: "Solution x =", answer: "7" }
-    ],
-    options: ["x", "4", "28", "x × 4 = 28", "7", "6", "x × 8 = 28", "4 × 4 = x", "32"]
-},
-{
-    question: `Each set of watercolors has 7 paint tubes.<br>If an art class buys 4 sets, how many paint tubes do they have in total?`,
-    slots: [
-        { label: "No. of Sets =", answer: "4" },
-        { label: "Tubes per set =", answer: "7" },
-        { label: "Total tubes =", answer: "x" },
-        { label: "Equation =", answer: "4 × 7 = x" },
-        { label: "Solution x =", answer: "28" }
-    ],
-    options: ["4", "7", "x", "4 × 7 = x", "28", "21", "4 × 6 = x", "7 × 7 = x", "35"]
-},
-{
-    question: `Each delivery truck carries 9 large crates.<br>There are 45 crates to deliver in total.<br>How many trucks are needed?`,
-    slots: [
-        { label: "No. of Trucks =", answer: "x" },
-        { label: "Crates per truck =", answer: "9" },
-        { label: "Total crates =", answer: "45" },
-        { label: "Equation =", answer: "x × 9 = 45" },
-        { label: "Solution x =", answer: "5" }
-    ],
-    options: ["x", "9", "45", "x × 9 = 45", "5", "6", "x × 4 = 45", "9 × 9 = x", "54"]
-},
-{
-    question: `Each branch on an oak tree has 6 acorns.<br>If a squirrel counts 8 branches, how many acorns are there in total?`,
-    slots: [
-        { label: "No. of Branches =", answer: "8" },
-        { label: "Acorns per branch =", answer: "6" },
-        { label: "Total acorns =", answer: "x" },
-        { label: "Equation =", answer: "8 × 6 = x" },
-        { label: "Solution x =", answer: "48" }
-    ],
-    options: ["8", "6", "x", "8 × 6 = x", "48", "42", "8 × 5 = x", "6 × 6 = x", "54"]
-},
-{
-    question: `Each row in a vegetable garden has 7 tomato plants.<br>There are 63 tomato plants in total.<br>How many rows are in the garden?`,
-    slots: [
-        { label: "No. of Rows =", answer: "x" },
-        { label: "Plants per row =", answer: "7" },
-        { label: "Total plants =", answer: "63" },
-        { label: "Equation =", answer: "x × 7 = 63" },
-        { label: "Solution x =", answer: "9" }
-    ],
-    options: ["x", "7", "63", "x × 7 = 63", "9", "8", "x × 8 = 63", "7 × 7 = x", "70"]
-},
-{
-    question: `Each picnic table can seat 6 children.<br>If there are 5 picnic tables, how many children can sit in total?`,
-    slots: [
-        { label: "No. of Tables =", answer: "5" },
-        { label: "Children per table =", answer: "6" },
-        { label: "Total children =", answer: "x" },
-        { label: "Equation =", answer: "5 × 6 = x" },
-        { label: "Solution x =", answer: "30" }
-    ],
-    options: ["5", "6", "x", "5 × 6 = x", "30", "24", "5 × 5 = x", "6 × 6 = x", "36"]
-},
-{
-    question: `Each keychain requires 2 decorative beads.<br>A crafter used 20 beads in total.<br>How many keychains did they make?`,
-    slots: [
-        { label: "No. of Keychains =", answer: "x" },
-        { label: "Beads per keychain =", answer: "2" },
-        { label: "Total beads =", answer: "20" },
-        { label: "Equation =", answer: "x × 2 = 20" },
-        { label: "Solution x =", answer: "10" }
-    ],
-    options: ["x", "2", "20", "x × 2 = 20", "10", "9", "x × 8 = 20", "2 × 2 = x", "18"]
-},
-{
-    question: `Each bundle of fireworks has 9 sparklers.<br>If you buy 3 bundles, how many sparklers do you have in total?`,
-    slots: [
-        { label: "No. of Bundles =", answer: "3" },
-        { label: "Sparklers per bundle =", answer: "9" },
-        { label: "Total sparklers =", answer: "x" },
-        { label: "Equation =", answer: "3 × 9 = x" },
-        { label: "Solution x =", answer: "27" }
-    ],
-    options: ["3", "9", "x", "3 × 9 = x", "27", "24", "3 × 8 = x", "9 × 9 = x", "36"]
-},
-{
-    question: `Each gift box requires 5 feet of ribbon.<br>A shop helper has 40 feet of ribbon in total.<br>How many boxes can they wrap?`,
-    slots: [
-        { label: "No. of Boxes =", answer: "x" },
-        { label: "Ribbon per box =", answer: "5" },
-        { label: "Total ribbon =", answer: "40" },
+        { label: "No. of Baskets =", answer: "x" },
+        { label: "Oranges per basket =", answer: "5" },
+        { label: "Total oranges =", answer: "40" },
         { label: "Equation =", answer: "x × 5 = 40" },
         { label: "Solution x =", answer: "8" }
     ],
-    options: ["x", "5", "40", "x × 5 = 40", "8", "7", "x × 7 = 40", "5 × 5 = x", "45"]
+    options: ["x", "5", "40", "x × 5 = 40", "8", "7", "x × 4 = 40", "5 × 5 = x", "45"]
 },
 {
-    question: `Each shelf in a display case holds 10 model cars.<br>If there are 4 shelves filled, how many model cars are on display?`,
+    question: `Each notebook contains 50 pages.<br>If a student buys 3 notebooks, how many pages are there in total?`,
     slots: [
-        { label: "No. of Shelves =", answer: "4" },
-        { label: "Cars per shelf =", answer: "10" },
-        { label: "Total model cars =", answer: "x" },
-        { label: "Equation =", answer: "4 × 10 = x" },
-        { label: "Solution x =", answer: "40" }
+        { label: "No. of Notebooks =", answer: "3" },
+        { label: "Pages per notebook =", answer: "50" },
+        { label: "Total pages =", answer: "x" },
+        { label: "Equation =", answer: "3 × 50 = x" },
+        { label: "Solution x =", answer: "150" }
     ],
-    options: ["4", "10", "x", "4 × 10 = x", "40", "30", "4 × 9 = x", "10 × 10 = x", "50"]
+    options: ["3", "50", "x", "3 × 50 = x", "150", "120", "3 × 40 = x", "50 × 5 = x", "200"]
+},
+{
+    question: `Each bus can carry 30 passengers.<br>There are 120 passengers in total.<br>How many buses are required?`,
+    slots: [
+        { label: "No. of Buses =", answer: "x" },
+        { label: "Passengers per bus =", answer: "30" },
+        { label: "Total passengers =", answer: "120" },
+        { label: "Equation =", answer: "x × 30 = 120" },
+        { label: "Solution x =", answer: "4" }
+    ],
+    options: ["x", "30", "120", "x × 30 = 120", "4", "5", "x × 20 = 120", "30 × 4 = x", "150"]
+},
+{
+    question: `Each flower bouquet contains 9 roses.<br>If a florist makes 8 bouquets, how many roses are used?`,
+    slots: [
+        { label: "No. of Bouquets =", answer: "8" },
+        { label: "Roses per bouquet =", answer: "9" },
+        { label: "Total roses =", answer: "x" },
+        { label: "Equation =", answer: "8 × 9 = x" },
+        { label: "Solution x =", answer: "72" }
+    ],
+    options: ["8", "9", "x", "8 × 9 = x", "72", "63", "8 × 8 = x", "9 × 9 = x", "81"]
+},
+{
+    question: `Each movie ticket costs 6 dollars.<br>A family spent 42 dollars in total.<br>How many tickets did they buy?`,
+    slots: [
+        { label: "No. of Tickets =", answer: "x" },
+        { label: "Cost per ticket =", answer: "6" },
+        { label: "Total cost =", answer: "42" },
+        { label: "Equation =", answer: "x × 6 = 42" },
+        { label: "Solution x =", answer: "7" }
+    ],
+    options: ["x", "6", "42", "x × 6 = 42", "7", "8", "x × 7 = 42", "6 × 6 = x", "48"]
+},
+{
+    question: `Each carton contains 12 eggs.<br>If a farmer packs 6 cartons, how many eggs are packed?`,
+    slots: [
+        { label: "No. of Cartons =", answer: "6" },
+        { label: "Eggs per carton =", answer: "12" },
+        { label: "Total eggs =", answer: "x" },
+        { label: "Equation =", answer: "6 × 12 = x" },
+        { label: "Solution x =", answer: "72" }
+    ],
+    options: ["6", "12", "x", "6 × 12 = x", "72", "60", "6 × 10 = x", "12 × 12 = x", "84"]
+},
+{
+    question: `Each spider has 8 legs.<br>If there are 11 spiders, how many legs are there altogether?`,
+    slots: [
+        { label: "No. of Spiders =", answer: "11" },
+        { label: "Legs per spider =", answer: "8" },
+        { label: "Total legs =", answer: "x" },
+        { label: "Equation =", answer: "11 × 8 = x" },
+        { label: "Solution x =", answer: "88" }
+    ],
+    options: ["11", "8", "x", "11 × 8 = x", "88", "80", "11 × 7 = x", "8 × 8 = x", "96"]
+},
+{
+    question: `Each packet contains 4 cookies.<br>There are 36 cookies in total.<br>How many packets are there?`,
+    slots: [
+        { label: "No. of Packets =", answer: "x" },
+        { label: "Cookies per packet =", answer: "4" },
+        { label: "Total cookies =", answer: "36" },
+        { label: "Equation =", answer: "x × 4 = 36" },
+        { label: "Solution x =", answer: "9" }
+    ],
+    options: ["x", "4", "36", "x × 4 = 36", "9", "8", "x × 3 = 36", "4 × 4 = x", "40"]
+},
+{
+    question: `Each train coach has 20 seats.<br>If a train has 5 coaches, how many seats are there in total?`,
+    slots: [
+        { label: "No. of Coaches =", answer: "5" },
+        { label: "Seats per coach =", answer: "20" },
+        { label: "Total seats =", answer: "x" },
+        { label: "Equation =", answer: "5 × 20 = x" },
+        { label: "Solution x =", answer: "100" }
+    ],
+    options: ["5", "20", "x", "5 × 20 = x", "100", "80", "5 × 10 = x", "20 × 20 = x", "120"]
+},
+
+{
+    question: `Each crate contains 15 apples.<br>If there are 6 crates, how many apples are there in total?`,
+    slots: [
+        { label: "No. of Crates =", answer: "6" },
+        { label: "Apples per crate =", answer: "15" },
+        { label: "Total apples =", answer: "x" },
+        { label: "Equation =", answer: "6 × 15 = x" },
+        { label: "Solution x =", answer: "90" }
+    ],
+    options: ["6", "15", "x", "6 × 15 = x", "90", "75", "6 × 10 = x", "15 × 15 = x", "105"]
+},
+{
+    question: `Each classroom has 25 desks.<br>The school has 100 desks in total.<br>How many classrooms are there?`,
+    slots: [
+        { label: "No. of Classrooms =", answer: "x" },
+        { label: "Desks per classroom =", answer: "25" },
+        { label: "Total desks =", answer: "100" },
+        { label: "Equation =", answer: "x × 25 = 100" },
+        { label: "Solution x =", answer: "4" }
+    ],
+    options: ["x", "25", "100", "x × 25 = 100", "4", "5", "x × 20 = 100", "25 × 4 = x", "125"]
+},
+{
+    question: `Each jar contains 7 candies.<br>If there are 9 jars, how many candies are there?`,
+    slots: [
+        { label: "No. of Jars =", answer: "9" },
+        { label: "Candies per jar =", answer: "7" },
+        { label: "Total candies =", answer: "x" },
+        { label: "Equation =", answer: "9 × 7 = x" },
+        { label: "Solution x =", answer: "63" }
+    ],
+    options: ["9", "7", "x", "9 × 7 = x", "63", "56", "9 × 6 = x", "7 × 7 = x", "70"]
+},
+{
+    question: `Each rope is 8 meters long.<br>A worker has 64 meters of rope.<br>How many ropes does he have?`,
+    slots: [
+        { label: "No. of Ropes =", answer: "x" },
+        { label: "Meters per rope =", answer: "8" },
+        { label: "Total meters =", answer: "64" },
+        { label: "Equation =", answer: "x × 8 = 64" },
+        { label: "Solution x =", answer: "8" }
+    ],
+    options: ["x", "8", "64", "x × 8 = 64", "8", "7", "x × 7 = 64", "8 × 8 = x", "72"]
+},
+{
+    question: `Each bag contains 14 marbles.<br>If there are 5 bags, how many marbles are there altogether?`,
+    slots: [
+        { label: "No. of Bags =", answer: "5" },
+        { label: "Marbles per bag =", answer: "14" },
+        { label: "Total marbles =", answer: "x" },
+        { label: "Equation =", answer: "5 × 14 = x" },
+        { label: "Solution x =", answer: "70" }
+    ],
+    options: ["5", "14", "x", "5 × 14 = x", "70", "56", "5 × 12 = x", "14 × 14 = x", "84"]
+},
+{
+    question: `Each shelf holds 16 books.<br>There are 80 books in total.<br>How many shelves are needed?`,
+    slots: [
+        { label: "No. of Shelves =", answer: "x" },
+        { label: "Books per shelf =", answer: "16" },
+        { label: "Total books =", answer: "80" },
+        { label: "Equation =", answer: "x × 16 = 80" },
+        { label: "Solution x =", answer: "5" }
+    ],
+    options: ["x", "16", "80", "x × 16 = 80", "5", "4", "x × 20 = 80", "16 × 5 = x", "96"]
+},
+{
+    question: `Each package contains 18 pencils.<br>If a teacher buys 4 packages, how many pencils are purchased?`,
+    slots: [
+        { label: "No. of Packages =", answer: "4" },
+        { label: "Pencils per package =", answer: "18" },
+        { label: "Total pencils =", answer: "x" },
+        { label: "Equation =", answer: "4 × 18 = x" },
+        { label: "Solution x =", answer: "72" }
+    ],
+    options: ["4", "18", "x", "4 × 18 = x", "72", "64", "4 × 16 = x", "18 × 4 = x", "90"]
+},
+{
+    question: `Each row has 11 chairs.<br>There are 88 chairs in total.<br>How many rows are there?`,
+    slots: [
+        { label: "No. of Rows =", answer: "x" },
+        { label: "Chairs per row =", answer: "11" },
+        { label: "Total chairs =", answer: "88" },
+        { label: "Equation =", answer: "x × 11 = 88" },
+        { label: "Solution x =", answer: "8" }
+    ],
+    options: ["x", "11", "88", "x × 11 = 88", "8", "7", "x × 10 = 88", "11 × 8 = x", "99"]
+},
+{
+    question: `Each aquarium contains 13 fish.<br>If there are 7 aquariums, how many fish are there altogether?`,
+    slots: [
+        { label: "No. of Aquariums =", answer: "7" },
+        { label: "Fish per aquarium =", answer: "13" },
+        { label: "Total fish =", answer: "x" },
+        { label: "Equation =", answer: "7 × 13 = x" },
+        { label: "Solution x =", answer: "91" }
+    ],
+    options: ["7", "13", "x", "7 × 13 = x", "91", "84", "7 × 12 = x", "13 × 7 = x", "104"]
+},
+{
+    question: `Each box holds 24 chocolates.<br>A bakery has 96 chocolates in total.<br>How many boxes are filled?`,
+    slots: [
+        { label: "No. of Boxes =", answer: "x" },
+        { label: "Chocolates per box =", answer: "24" },
+        { label: "Total chocolates =", answer: "96" },
+        { label: "Equation =", answer: "x × 24 = 96" },
+        { label: "Solution x =", answer: "4" }
+    ],
+    options: ["x", "24", "96", "x × 24 = 96", "4", "5", "x × 20 = 96", "24 × 4 = x", "120"]
 }
 ];
